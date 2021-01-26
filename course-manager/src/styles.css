@@ -1,2 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~bootstrap/dist/css/bootstrap.min.css'
+/* bootstrap para visual geral da aplicação */ 
+@import '~bootstrap/dist/css/bootstrap.min.css';
+/* font awesome para usar as estrelas do rating */
+@import '~font-awesome/css/font-awesome.min.css';
