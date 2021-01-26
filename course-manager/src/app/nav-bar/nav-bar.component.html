@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a href="#" class="navbar-brand">Gerenciamento de Cursos</a>
+    <a [routerLink]="['/courses']" class="navbar-brand">Gerenciamento de Cursos</a>
 
     <button class="navbar-toggler" type="button" data-toggler="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -9,7 +9,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a href="#" class="nav-link">Cursos</a>
+                <a [routerLink]="['/courses']" routerLinkActive="active" class="nav-link">Cursos</a>
             </li>
         </ul>
     </div>
