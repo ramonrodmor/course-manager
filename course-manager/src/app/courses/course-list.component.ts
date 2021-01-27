@@ -27,6 +27,17 @@ export class CourseListComponent implements OnInit{
             error: err => console.error('Error', err)
         });    
     }
+
+    deleteById(courseId: number): void {
+        this.CourseService.deleteById(courseId).subscribe({
+            next: () => {
+                console.log('Deleted with success');
+                this.retrieveAll();
+            },
+            error: err => console.log('Error', err)
+        })
+    }
+
     set filter(value: string) {
         this._filterBy = value;
         this.filteredCourses = this._courses.filter((course: Course) => course.name.toLocaleLowerCase().indexOf(this._filterBy.toLocaleLowerCase()) > -1)
@@ -35,6 +46,4 @@ export class CourseListComponent implements OnInit{
     get filter() {
         return this._filterBy;
     }
-
-
 }
